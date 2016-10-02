@@ -10,5 +10,5 @@ git clone https://github.com/lihop/nixos-vultr-bootstrap
 
 cd nixos-vultr-bootstrap
 ./bootstrap.sh
-reboot
 ```
+At the end of the installation you will be prompted to enter a password for the root user. Do this, then go back to the the dashboard and remove the ISO.
