@@ -10,6 +10,14 @@
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/vda";
 
+  fileSystems.root = {
+    device = "/dev/vda";
+    mountPoint = "/";
+    fsType = "ext4";
+    neededForBoot = true;
+    autoResize = true;
+  };
+
   services.openssh = {
     enable = true;
     passwordAuthentication = false;
